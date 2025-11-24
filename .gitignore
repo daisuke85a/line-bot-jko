@@ -1,6 +1,5 @@
 node_modules/
 dist/
 .env
-scraped-items.json
 *.log
 .DS_Store
