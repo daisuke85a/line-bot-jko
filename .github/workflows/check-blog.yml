@@ -1,0 +1,46 @@
+name: Check Blog and Notify LINE
+
+on:
+  # 毎日11時（日本時間）に実行 = UTC 2:00
+  schedule:
+    - cron: '0 2 * * *'
+
+  # 手動実行も可能にする
+  workflow_dispatch:
+
+jobs:
+  check-blog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # scraped-items.json をコミットするために必要
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build TypeScript
+        run: npm run build
+
+      - name: Run blog checker
+        env:
+          BLOG_URL: ${{ secrets.BLOG_URL }}
+          LINE_CHANNELS: ${{ secrets.LINE_CHANNELS }}
+        run: npm start
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add scraped-items.json
+          git diff --staged --quiet || git commit -m "Update scraped items [skip ci]"
+          git push

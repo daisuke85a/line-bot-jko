@@ -1,0 +1,32 @@
+{
+  "name": "line-bot-jko",
+  "version": "1.0.0",
+  "description": "ブログ更新を検出してLINEに通知するBot（GitHub Actions版）",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "check": "npm run build && npm start"
+  },
+  "keywords": [
+    "line-bot",
+    "blog",
+    "scraping",
+    "github-actions"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@line/bot-sdk": "^9.3.0",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/node-fetch": "^2.6.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
+  }
+}
