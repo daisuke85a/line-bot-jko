@@ -1,6 +1,7 @@
 import fetch from 'node-fetch';
 import * as cheerio from 'cheerio';
-import { BlogItem } from './types';
+import { BlogItem, ScrapedItem } from './types';
+import { generateHash } from './hash';
 
 export class BlogScraper {
   constructor(private blogUrl: string) {}
@@ -42,19 +43,28 @@ export class BlogScraper {
   }
 
   /**
-   * 2つの記事が同じかどうかを判定
+   * 記事リストから新しい記事を抽出（タイトル + 本文ハッシュで比較）
    */
-  static isSameItem(item1: BlogItem, item2: BlogItem): boolean {
-    return item1.title === item2.title && item1.text === item2.text;
+  static getNewItems(currentItems: BlogItem[], previousItems: ScrapedItem[]): BlogItem[] {
+    // 既存記事のハッシュセットを作成（高速検索のため）
+    const previousHashes = new Set(
+      previousItems.map((item) => `${item.title}::${item.hash}`)
+    );
+
+    return currentItems.filter((currentItem) => {
+      const currentHash = generateHash(currentItem.text);
+      const key = `${currentItem.title}::${currentHash}`;
+      return !previousHashes.has(key);
+    });
   }
 
   /**
-   * 記事リストから新しい記事を抽出
+   * BlogItem から ScrapedItem への変換
    */
-  static getNewItems(currentItems: BlogItem[], previousItems: BlogItem[]): BlogItem[] {
-    return currentItems.filter(
-      (currentItem) =>
-        !previousItems.some((previousItem) => this.isSameItem(currentItem, previousItem))
-    );
+  static toScrapedItem(item: BlogItem): ScrapedItem {
+    return {
+      title: item.title,
+      hash: generateHash(item.text),
+    };
   }
 }

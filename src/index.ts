@@ -58,8 +58,9 @@ async function main() {
     console.log('\n--- Sending LINE notifications ---');
     await LineNotifier.notifyAll(config.channels, newItems);
 
-    // 5. 既読記事データを更新
-    storage.addItems(newItems);
+    // 5. 既読記事データを更新（ハッシュ形式で保存）
+    const scrapedItems = newItems.map((item) => BlogScraper.toScrapedItem(item));
+    storage.addItems(scrapedItems);
 
     console.log('\n=== Completed successfully ===');
   } catch (error) {

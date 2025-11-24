@@ -1,12 +1,14 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { ScrapedData, BlogItem } from './types';
+import { ScrapedData, ScrapedItem } from './types';
 
 export class Storage {
   private dataFile: string;
+  private maxItems: number;
 
-  constructor(dataFile: string = 'scraped-items.json') {
+  constructor(dataFile: string = 'scraped-items.json', maxItems: number = 50) {
     this.dataFile = path.resolve(process.cwd(), dataFile);
+    this.maxItems = maxItems;
   }
 
   /**
@@ -46,14 +48,15 @@ export class Storage {
   /**
    * 新しい記事を追加して保存
    */
-  addItems(newItems: BlogItem[]): void {
+  addItems(newItems: ScrapedItem[]): void {
     const data = this.load();
     data.items.push(...newItems);
     data.lastChecked = new Date().toISOString();
 
-    // 古いデータを削除（最新100件のみ保持）
-    if (data.items.length > 100) {
-      data.items = data.items.slice(-100);
+    // 古いデータを削除（最新N件のみ保持）
+    if (data.items.length > this.maxItems) {
+      data.items = data.items.slice(-this.maxItems);
+      console.log(`Trimmed to latest ${this.maxItems} items`);
     }
 
     this.save(data);

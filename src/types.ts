@@ -14,7 +14,12 @@ export interface Config {
   channels: Channel[];
 }
 
+export interface ScrapedItem {
+  title: string;
+  hash: string; // 本文のSHA-256ハッシュ
+}
+
 export interface ScrapedData {
-  items: BlogItem[];
+  items: ScrapedItem[]; // タイトル + ハッシュで重複チェック（ファイルサイズ削減）
   lastChecked: string;
 }
