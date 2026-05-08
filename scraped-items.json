@@ -1,10 +1,6 @@
 {
   "items": [
     {
-      "title": "11/28～12/4スケジュール",
-      "hash": "04ccccd0fe4f9ae13e8f8e029075e81ef5e5359c28f84d131caa11cb44a5e65b"
-    },
-    {
       "title": "12/5～12/7スケジュール",
       "hash": "bb88c1d889e5f47e0ac7a3fd34b6684bdf12ef7decdc997a8da65a2f175eec28"
     },
@@ -199,7 +195,11 @@
     {
       "title": "5/10～5/20スケジュール",
       "hash": "f0c80e2dee1224509feb24e7594905ae0b8ea6881e43c79a88eb37be4a8da777"
+    },
+    {
+      "title": "ご挨拶",
+      "hash": "c9f026b0e6993b93d544ced75aade862f88713c2016ca0847b6eae603b33afa9"
     }
   ],
-  "lastChecked": "2026-05-07T05:25:32.795Z"
+  "lastChecked": "2026-05-08T04:49:16.331Z"
 }
