@@ -1,10 +1,6 @@
 {
   "items": [
     {
-      "title": "合同レッスンの お知らせ",
-      "hash": "64a1c58302cf55c58cfcbbf38dbe0b74654f28df3a3040f9af35ad6bc25b94cd"
-    },
-    {
       "title": "12/12～12/21スケジュール",
       "hash": "720577e4575c0cb3306465b6516a68b4acb83dae48fb49fe8f17a9985b1a2ae8"
     },
@@ -199,7 +195,11 @@
     {
       "title": "5/20～5/27スケジュール",
       "hash": "01fb5805fcea56193d794f130e1293193d4651d906ad4b8c31c90e2adfad06e8"
+    },
+    {
+      "title": "5/27～6/3スケジュール",
+      "hash": "7f56fdc5cee5d05d9517f8a5ecb65293388fa6380b55eb6f20fd31ab0a771182"
     }
   ],
-  "lastChecked": "2026-05-23T05:33:47.388Z"
+  "lastChecked": "2026-05-24T05:55:11.321Z"
 }
