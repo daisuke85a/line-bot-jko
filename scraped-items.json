@@ -1,10 +1,6 @@
 {
   "items": [
     {
-      "title": "12月31日",
-      "hash": "4fe89d7951dc67fdc7de8e2ec29b3a0d8982b6150ee461cdaa4866fc6afab70d"
-    },
-    {
       "title": "1月1日　元旦",
       "hash": "a8f59fec7ca2a0c0da5ae770df6c2e8c5cf69545423dfb4dee8b07eea245ccdf"
     },
@@ -199,7 +195,11 @@
     {
       "title": "6/3～6/10スケジュール",
       "hash": "74c7116b1d381cf37a1ebf5c1151460c6dd5d54f211e447fd3092b95738419d2"
+    },
+    {
+      "title": "6/17～6/24スケジュール",
+      "hash": "1882da744d6e741d675d680c077cbcfb1a323227fdefc870290e99dd24ac1de4"
     }
   ],
-  "lastChecked": "2026-06-14T06:27:18.017Z"
+  "lastChecked": "2026-06-15T07:10:24.003Z"
 }
