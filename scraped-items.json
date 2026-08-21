@@ -2,10 +2,6 @@
   "items": [
     {
       "title": "3/9～3/18スケジュール",
-      "hash": "996dbbf2f60c0684795c6f9a7d9184ae3e861b12c38c7b2221de892a89ca610a"
-    },
-    {
-      "title": "3/9～3/18スケジュール",
       "hash": "f941639f5bd7367ccea91ce21ea57bb8ecb8334878bddfe570e99bd1309ec069"
     },
     {
@@ -199,7 +195,11 @@
     {
       "title": "8/19～8/27スケジュール",
       "hash": "471c9edb38dd20c3de476047ccdc5f3484b03df458bbe7beaf045503f292de8a"
+    },
+    {
+      "title": "8/19～8/27スケジュール",
+      "hash": "bf8bf39d6ab77e4c50d739c64b3494efc4c97d2040b5a28181a902f40006f18b"
     }
   ],
-  "lastChecked": "2026-08-20T02:49:38.129Z"
+  "lastChecked": "2026-08-21T02:55:29.781Z"
 }
