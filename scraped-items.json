@@ -1,14 +1,6 @@
 {
   "items": [
     {
-      "title": "3/30～4/5スケジュール",
-      "hash": "86647373b8552a051b774454a605420c809e2b55d34e9dbfbab48ba22c55237a"
-    },
-    {
-      "title": "4/6～4/12スケジュール",
-      "hash": "911331c1e3278ad9dc7dcd0da1a4a301ab00f4f3dfbeeb62a73642d845da858c"
-    },
-    {
       "title": "4/6～4/12スケジュール",
       "hash": "3c46b89c961c4c02de40c45b8145456c44885119ca37aac4074dca482f1ef78b"
     },
@@ -199,7 +191,15 @@
     {
       "title": "9/17～9/24スケジュール",
       "hash": "b5607010672c55d5e32a97cc01e96033c7f56bfc0ab182ef5ec674b217c26b3e"
+    },
+    {
+      "title": "9/24～10/1スケジュール",
+      "hash": "362b581eed1c34a6e7dcfb61b0c93d4a6749b0e5eec8f23e750db46bd57b8b17"
+    },
+    {
+      "title": "9/17～9/24スケジュール",
+      "hash": "48cbeb7d3f3c9f72bbd46155bca955610f6bc47ced8a96b7bd99a84f8a6a0ca1"
     }
   ],
-  "lastChecked": "2026-09-16T07:02:00.635Z"
+  "lastChecked": "2026-09-17T06:57:34.961Z"
 }
