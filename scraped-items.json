@@ -2,14 +2,6 @@
   "items": [
     {
       "title": "4/6～4/12スケジュール",
-      "hash": "3c46b89c961c4c02de40c45b8145456c44885119ca37aac4074dca482f1ef78b"
-    },
-    {
-      "title": "発表会プログラム[仮]",
-      "hash": "e8bf9803de2812882aa550eb879f0bebf51f316d58ffd3d1726b526be5d717c0"
-    },
-    {
-      "title": "4/6～4/12スケジュール",
       "hash": "e1787fe33e47a16aecdc9b24e16bf8c4a113a8ea76af7d48a3fb84574bc626f5"
     },
     {
@@ -199,7 +191,15 @@
     {
       "title": "9/17～9/24スケジュール",
       "hash": "48cbeb7d3f3c9f72bbd46155bca955610f6bc47ced8a96b7bd99a84f8a6a0ca1"
+    },
+    {
+      "title": "10/1～10/8スケジュール",
+      "hash": "903c98e01e2d532f2a39667a51c422e63da6ef6244104e51af7e7af85537039d"
+    },
+    {
+      "title": "9/24～10/1スケジュール",
+      "hash": "c5055c42e3fa7587dfb82196a3bca306805d4cad2b80834d6756910017ce949b"
     }
   ],
-  "lastChecked": "2026-09-20T07:18:26.165Z"
+  "lastChecked": "2026-09-21T07:28:17.743Z"
 }
