@@ -1,22 +1,6 @@
 {
   "items": [
     {
-      "title": "4/13～4/19スケジュール",
-      "hash": "f7b7a3c393083392d8569e9021233b59a92f9b5f4d41fbc480c33fbccbd174ef"
-    },
-    {
-      "title": "4/20～5/5スケジュール",
-      "hash": "329330ada98d24cd93bfefa70138980da88f9b169e4a81a574b6bee11e6056b3"
-    },
-    {
-      "title": "4/13～4/19スケジュール",
-      "hash": "dfbc30a2ccacb9c7a8523470ff7b6e10d1aa30ba0a63216049fc2bdcb18b2133"
-    },
-    {
-      "title": "4/19～5/5スケジュール",
-      "hash": "6ef784088aefc3852531494c8a8ca1d1becaf6c9ecf29240215403da166fab0e"
-    },
-    {
       "title": "4/24～5/5スケジュール",
       "hash": "2c22084dbbc7c6270475e897b5f85fa7c1559b00efe80b5ceed9344683523e31"
     },
@@ -199,7 +183,23 @@
     {
       "title": "10/16～10/22スケジュール",
       "hash": "616e514de139426f515a4aa6caf87a83355fc6f0ed1f8c3ae27b6d4ca61777cc"
+    },
+    {
+      "title": "手作りに向けてのレッスンスケジュール",
+      "hash": "8dc2bbc7b315d7a9d73aba1cc9b5582395bf78ec76f4f9ee7928737deff720be"
+    },
+    {
+      "title": "10/23～10/29スケジュール",
+      "hash": "c5459ecdcccf3e11f51661210c950c5cf8d020609307413f78b50e9fa010fed9"
+    },
+    {
+      "title": "10/16～10/22スケジュール",
+      "hash": "258ab1ce1a56184bed5ae5f6be05588f837997ca82ee884cc6faa4d11939ac89"
+    },
+    {
+      "title": "10/8～10/15スケジュール",
+      "hash": "f761f8fc0b647b745ff9885e475db0a82de276811ea1b2495f2895e85f9050d9"
     }
   ],
-  "lastChecked": "2026-10-12T08:21:30.845Z"
+  "lastChecked": "2026-10-13T08:46:29.025Z"
 }
