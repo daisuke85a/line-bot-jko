@@ -1,10 +1,6 @@
 {
   "items": [
     {
-      "title": "ご挨拶",
-      "hash": "c9f026b0e6993b93d544ced75aade862f88713c2016ca0847b6eae603b33afa9"
-    },
-    {
       "title": "5/20～5/27スケジュール",
       "hash": "01fb5805fcea56193d794f130e1293193d4651d906ad4b8c31c90e2adfad06e8"
     },
@@ -199,7 +195,11 @@
     {
       "title": "11/20～11/26スケジュール",
       "hash": "6605fbf892237c38201eeeb73b9051d5e4cf643c114bb9218cbddd6b0e767639"
+    },
+    {
+      "title": "11/27～12/3スケジュール",
+      "hash": "9c24d550066fc3115da4da0fa6983ec073970426596a0d62d2414bd2fd9abf32"
     }
   ],
-  "lastChecked": "2026-11-22T09:08:27.927Z"
+  "lastChecked": "2026-11-23T10:03:06.049Z"
 }
